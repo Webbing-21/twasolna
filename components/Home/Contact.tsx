@@ -1,5 +1,4 @@
 import React from 'react'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/custom-accordion'
 import { Card, CardContent, CardHeader } from '../ui/card'
 import { ContactForm } from './contact-form'
 

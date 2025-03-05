@@ -27,14 +27,14 @@ export function ContactForm() {
 
     try {
       // Replace with your actual API endpoint
-      const response = await axios.post("/api/contact", values)
+      await axios.post("/api/contact", values)
 
       setSubmitStatus({
         success: true,
         message: "تم إرسال رسالتك بنجاح!",
       })
       resetForm()
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         success: false,
         message: "حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",

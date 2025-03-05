@@ -26,7 +26,7 @@ interface AccordionTriggerProps
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   AccordionTriggerProps
->(({ className, children, noBackgroundIcon, ...props }, ref) => (
+>(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}

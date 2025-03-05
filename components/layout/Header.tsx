@@ -9,10 +9,9 @@ import UserHeader from "./user"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [login, setLogin] = useState(localStorage.getItem("token") === "login" ? true : false)
+  const [login, setLogin] = useState(false)
 
   const handelLogin = () => {
-      localStorage.setItem("token", "login")
       setLogin(true)
   }
   // const handelLogout = () => {

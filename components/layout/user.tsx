@@ -39,7 +39,6 @@ export default function UserHeader() {
             <DropdownMenuItem
               className="cursor-pointer text-red-500"
               onClick={() => {
-                localStorage.removeItem("token");
                 setTimeout(() => {
                     window.location.reload();
                 }, 2000);
